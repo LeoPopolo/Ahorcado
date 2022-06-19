@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Ahorcado</title>
+</head>
+<body>
+    <main>
+        <div class="ahorcado-container">
+            <div class="base-container">
+                <span class="base-container-base" id="base-container-base"></span>
+                <span class="base-container-neck" id="base-container-neck"></span>
+                <span class="base-container-top" id="base-container-top"></span>
+                <span class="base-container-holding" id="base-container-holding"></span>
+
+                <span class="player-head" id="player-head"></span>
+                <span class="player-body" id="player-body"></span>
+                <span class="player-left-arm" id="player-left-arm"></span>
+                <span class="player-right-arm" id="player-right-arm"></span>
+                <span class="player-left-leg" id="player-left-leg"></span>
+                <span class="player-right-leg" id="player-right-leg"></span>
+            </div>
+
+            <div id="word-container">
+            </div>
+
+            <div id="letter-container">
+                <span id="letters-hit"></span>
+            </div>
+        </div>
+        <div class="input-container">
+            <div class="input-letter-container">
+                <input type="text" placeholder="Letra" id="letter" maxlength="1">
+                <span class="material-symbols-outlined" id="btn-input-letter">
+                    arrow_upward
+                </span>
+            </div>
+            <label id="left-lifes"></label>
+            <button id="restart">Reiniciar</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: #dec0f1;
+}
+
+main {
+    padding: 1em;
+}
+
+.ahorcado-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.base-container {
+    position: relative;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 10%;
+    width: 12%;
+    display: inline-flex;
+}
+
+.base-container span {
+    position: absolute;
+}
+
+.base-container-base {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #121212;
+    bottom: 1em;
+    left: 1em;
+}
+
+.base-container-neck {
+    border: .5px solid #121212;
+    height: 80px;
+    bottom: calc(1em + 50px);
+    left: calc(1em + 50px);
+}
+
+.base-container-top {
+    border: .5px solid #121212;
+    bottom: calc(1em + 130px);
+    left: calc(1em + 50px);
+    width: 120px;
+}
+
+.base-container-holding {
+    border: .5px solid #121212;
+    height: 30px;
+    bottom: calc(1em + 100px);
+    left: calc(1em + 168px);
+}
+
+.player-head {
+    border: .5px solid #121212;
+    height: 20px;
+    bottom: calc(1em + 80px);
+    left: calc(1em + 159px);
+    border-radius: 50%;
+    width: 20px;
+}
+
+.player-body {
+    border: .5px solid #121212;
+    height: 50px;
+    bottom: calc(1em + 32px);
+    left: calc(1em + 168px);
+}
+
+.player-left-arm {
+    border: .5px solid #121212;
+    width: 20px;
+    bottom: calc(1em + 65px);
+    left: calc(1em + 148px);
+}
+
+.player-right-arm {
+    border: .5px solid #121212;
+    width: 20px;
+    bottom: calc(1em + 65px);
+    left: calc(1em + 169px);
+}
+
+.player-left-leg {
+    border: .5px solid #121212;
+    width: 20px;
+    bottom: calc(1em + 25px);
+    left: calc(1em + 152px);
+    transform: rotate(-45deg);
+}
+
+.player-right-leg {
+    border: .5px solid #121212;
+    width: 20px;
+    bottom: calc(1em + 25px);
+    left: calc(1em + 167px);
+    transform: rotate(45deg);
+}
+
+#word-container {
+    height: 25%;
+    margin-left: 10%;
+    margin-top: 5%;
+    gap: 1em;
+    width: auto;
+    display: inline-flex;
+    position: relative;
+}
+
+#word-container span {
+    border-bottom: 1px solid #121212;
+    padding: .5em;
+    font-size: 2em;
+}
+
+.input-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-container input {
+    border-radius: 100px;
+    padding: 1em;
+    font-size: 1.3em;
+    box-shadow: 1px 1px 8px 0 #bbb;
+}
+
+.input-container label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.player-head {
+    display: none;
+}
+
+.player-body {
+    display: none;
+}
+
+.player-left-arm {
+    display: none;
+}
+
+.player-right-arm {
+    display: none;
+}
+
+.player-left-leg {
+    display: none;
+}
+
+.player-right-leg {
+    display: none;
+}
+
+#restart {
+    padding: 1em;
+    background-color: #49a7e6;
+    border-radius: 100px;
+    font-size: 1.2em;
+    box-shadow: 1px 1px 8px 0 #bbb;
+    cursor: pointer;
+    color: #fff;
+}
+
+#letter-container {
+    margin-left: 25%;
+    font-size: 2em;
+}
+
+.input-letter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.input-letter-container span {
+    display: none;
+}
+
+@media (max-width: 799px) {
+    main {
+        width: 100%;
+    }
+
+    .ahorcado-container {
+        flex-direction: column;
+        margin-top: 30%;
+        justify-content: center;
+    }
+
+    .base-container {
+        margin-top: 15%;
+        margin-left: 30%;
+        width: 100%;
+    }
+
+    #word-container {
+        width: auto;
+        max-width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        height: auto;
+    }
+
+    #word-container span {
+        padding: .3em;
+        font-size: 1.3em;
+    }
+
+    #letter-container {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 1.3em;
+    }
+
+    .input-container {
+        flex-direction: column;
+        margin-top: 10%;
+        gap: 3em;
+    }
+
+    .input-letter-container span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5em;
+        width: 2.5em;
+        border-radius: 50%;
+        background-color: #49a7e6;
+        box-shadow: 1px 1px 8px 0 #bbb;
+        color: #fff;
+        cursor: pointer;
+    }    
+}
